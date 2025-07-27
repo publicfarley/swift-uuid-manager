@@ -1,0 +1,29 @@
+{
+  "": {
+    "swift-dependencies": "/home/farley/code/swift/uuid-manager/.build/aarch64-unknown-linux-gnu/debug/UUIDManager.build/master.swiftdeps"
+  },
+  "/home/farley/code/swift/uuid-manager/Sources/UUIDManager/App.swift": {
+    "dependencies": "/home/farley/code/swift/uuid-manager/.build/aarch64-unknown-linux-gnu/debug/UUIDManager.build/App.d",
+    "object": "/home/farley/code/swift/uuid-manager/.build/aarch64-unknown-linux-gnu/debug/UUIDManager.build/App.swift.o",
+    "swiftmodule": "/home/farley/code/swift/uuid-manager/.build/aarch64-unknown-linux-gnu/debug/UUIDManager.build/App~partial.swiftmodule",
+    "swift-dependencies": "/home/farley/code/swift/uuid-manager/.build/aarch64-unknown-linux-gnu/debug/UUIDManager.build/App.swiftdeps"
+  },
+  "/home/farley/code/swift/uuid-manager/Sources/UUIDManager/Storage.swift": {
+    "dependencies": "/home/farley/code/swift/uuid-manager/.build/aarch64-unknown-linux-gnu/debug/UUIDManager.build/Storage.d",
+    "object": "/home/farley/code/swift/uuid-manager/.build/aarch64-unknown-linux-gnu/debug/UUIDManager.build/Storage.swift.o",
+    "swiftmodule": "/home/farley/code/swift/uuid-manager/.build/aarch64-unknown-linux-gnu/debug/UUIDManager.build/Storage~partial.swiftmodule",
+    "swift-dependencies": "/home/farley/code/swift/uuid-manager/.build/aarch64-unknown-linux-gnu/debug/UUIDManager.build/Storage.swiftdeps"
+  },
+  "/home/farley/code/swift/uuid-manager/Sources/UUIDManager/UUIDEntry.swift": {
+    "dependencies": "/home/farley/code/swift/uuid-manager/.build/aarch64-unknown-linux-gnu/debug/UUIDManager.build/UUIDEntry.d",
+    "object": "/home/farley/code/swift/uuid-manager/.build/aarch64-unknown-linux-gnu/debug/UUIDManager.build/UUIDEntry.swift.o",
+    "swiftmodule": "/home/farley/code/swift/uuid-manager/.build/aarch64-unknown-linux-gnu/debug/UUIDManager.build/UUIDEntry~partial.swiftmodule",
+    "swift-dependencies": "/home/farley/code/swift/uuid-manager/.build/aarch64-unknown-linux-gnu/debug/UUIDManager.build/UUIDEntry.swiftdeps"
+  },
+  "/home/farley/code/swift/uuid-manager/Sources/UUIDManager/main.swift": {
+    "dependencies": "/home/farley/code/swift/uuid-manager/.build/aarch64-unknown-linux-gnu/debug/UUIDManager.build/main.d",
+    "object": "/home/farley/code/swift/uuid-manager/.build/aarch64-unknown-linux-gnu/debug/UUIDManager.build/main.swift.o",
+    "swiftmodule": "/home/farley/code/swift/uuid-manager/.build/aarch64-unknown-linux-gnu/debug/UUIDManager.build/main~partial.swiftmodule",
+    "swift-dependencies": "/home/farley/code/swift/uuid-manager/.build/aarch64-unknown-linux-gnu/debug/UUIDManager.build/main.swiftdeps"
+  }
+}
