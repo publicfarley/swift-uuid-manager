@@ -95,4 +95,13 @@ class App {
         try uuidString.write(toFile: tempFile, atomically: true, encoding: .utf8)
         return tempFile
     }
+    
+    func updateSelectedEntryDescription(_ description: String) throws {
+        guard let index = selectedIndex, index < uuidEntries.count else {
+            throw NSError(domain: "UUIDManager", code: 1, userInfo: [NSLocalizedDescriptionKey: "No UUID selected"])
+        }
+        
+        uuidEntries[index].description = description
+        try storage.save(uuidEntries)
+    }
 }

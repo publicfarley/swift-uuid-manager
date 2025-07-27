@@ -3,7 +3,7 @@ import Foundation
 struct UUIDEntry: Codable, Identifiable {
     let id: UUID
     let timestamp: Date
-    let description: String
+    var description: String
     
     init(description: String) {
         self.id = UUID()

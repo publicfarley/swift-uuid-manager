@@ -58,7 +58,7 @@ func displayUI(app: App) {
         print("Commands: (n)ew UUID, (i)nput mode, (d)elete, (c)opy, up/down navigate, (q)uit")
     case .editing:
         print("Editing mode - Enter description: \(app.input)")
-        print("Press Enter to save, Esc to cancel")
+        print("Press Enter to save, type 'cancel' to cancel")
     }
     
     print("")
@@ -90,7 +90,12 @@ func handleNormalModeInput(_ input: String, app: App) throws -> Bool {
         Thread.sleep(forTimeInterval: 1)
         
     case "i", "input":
-        app.toggleInputMode()
+        if app.selectedIndex != nil {
+            app.toggleInputMode()
+        } else {
+            print("Error: No UUID selected. Select a UUID first before entering input mode.")
+            Thread.sleep(forTimeInterval: 2)
+        }
         
     case "d", "delete":
         if app.deleteSelectedEntry() {
@@ -131,15 +136,17 @@ func handleNormalModeInput(_ input: String, app: App) throws -> Bool {
 }
 
 func handleEditingModeInput(_ input: String, app: App) throws -> Bool {
-    if input == "esc" || input == "escape" {
+    if input.lowercased() == "cancel" {
         app.input = ""
         app.toggleInputMode()
+        print("Input cancelled.")
+        Thread.sleep(forTimeInterval: 1)
     } else if input.isEmpty {
         let description = app.input
-        try app.addEntry(description: description)
+        try app.updateSelectedEntryDescription(description)
         app.input = ""
         app.toggleInputMode()
-        print("New UUID with description created!")
+        print("Description updated!")
         Thread.sleep(forTimeInterval: 1)
     } else {
         app.input = input
