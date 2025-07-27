@@ -55,7 +55,7 @@ func displayUI(app: App) {
     
     switch app.inputMode {
     case .normal:
-        print("Commands: (n)ew UUID, (i)nput mode, (d)elete, (c)opy, ↑/↓ navigate, (q)uit")
+        print("Commands: (n)ew UUID, (i)nput mode, (d)elete, (c)opy, up/down navigate, (q)uit")
     case .editing:
         print("Editing mode - Enter description: \(app.input)")
         print("Press Enter to save, Esc to cancel")
@@ -109,10 +109,10 @@ func handleNormalModeInput(_ input: String, app: App) throws -> Bool {
         }
         Thread.sleep(forTimeInterval: 1)
         
-    case "up", "↑":
+    case "up":
         app.previousEntry()
         
-    case "down", "↓":
+    case "down":
         app.nextEntry()
         
     case "l", "list":
