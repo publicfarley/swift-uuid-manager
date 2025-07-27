@@ -1,0 +1,37 @@
+# .gitignore file for Swift projects
+
+# Xcode specific files and directories
+xcuserdata/
+build/
+DerivedData/
+
+# Swift Package Manager
+.build/
+
+# CocoaPods
+Pods/
+*.xcworkspace
+
+# Carthage
+Carthage/Build/
+
+# Other IDEs
+.idea/
+.vscode/
+
+# Log and temporary files
+*.log
+*.tmp
+
+# macOS specific files
+.DS_Store
+
+# Environment settings
+.env
+
+# Fastlane specific settings
+fastlane/report.xml
+fastlane/screenshots/*.png
+
+# And so on for other settings...
+
